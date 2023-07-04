@@ -11,7 +11,7 @@ type Tabs = 'Header' | 'Toolbar' | 'PageTitle' | 'Aside' | 'Content' | 'Footer';
 export class BuilderComponent implements OnInit {
   activeTab: Tabs = 'Header';
   model: any;
-  @ViewChild('form', { static: true }) form: NgForm;
+  @ViewChild('form', { static: true }) form!: NgForm;
   configLoading: boolean = false;
   resetLoading: boolean = false;
   constructor(private layout: LayoutService) {}
