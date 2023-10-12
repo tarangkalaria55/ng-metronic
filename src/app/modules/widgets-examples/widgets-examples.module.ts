@@ -11,15 +11,15 @@ import { FeedsComponent } from './feeds/feeds.component';
 import { WidgetsModule } from '../../_metronic/partials';
 
 @NgModule({
-  declarations: [
-    WidgetsExamplesComponent,
-    ListsComponent,
-    StatisticsComponent,
-    ChartsComponent,
-    MixedComponent,
-    TablesComponent,
-    FeedsComponent,
-  ],
-  imports: [CommonModule, WidgetsExamplesRoutingModule, WidgetsModule],
+	declarations: [
+		WidgetsExamplesComponent,
+		ListsComponent,
+		StatisticsComponent,
+		ChartsComponent,
+		MixedComponent,
+		TablesComponent,
+		FeedsComponent,
+	],
+	imports: [CommonModule, WidgetsExamplesRoutingModule, WidgetsModule],
 })
 export class WidgetsExamplesModule {}

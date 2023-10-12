@@ -15,23 +15,17 @@ import { SignInMethodComponent } from './settings/forms/sign-in-method/sign-in-m
 import { DropdownMenusModule, WidgetsModule } from '../../_metronic/partials';
 
 @NgModule({
-  declarations: [
-    AccountComponent,
-    OverviewComponent,
-    SettingsComponent,
-    ProfileDetailsComponent,
-    ConnectedAccountsComponent,
-    DeactivateAccountComponent,
-    EmailPreferencesComponent,
-    NotificationsComponent,
-    SignInMethodComponent,
-  ],
-  imports: [
-    CommonModule,
-    AccountRoutingModule,
-    InlineSVGModule,
-    DropdownMenusModule,
-    WidgetsModule,
-  ],
+	declarations: [
+		AccountComponent,
+		OverviewComponent,
+		SettingsComponent,
+		ProfileDetailsComponent,
+		ConnectedAccountsComponent,
+		DeactivateAccountComponent,
+		EmailPreferencesComponent,
+		NotificationsComponent,
+		SignInMethodComponent,
+	],
+	imports: [CommonModule, AccountRoutingModule, InlineSVGModule, DropdownMenusModule, WidgetsModule],
 })
 export class AccountModule {}

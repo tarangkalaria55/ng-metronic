@@ -1,11 +1,63 @@
 {
-  "files.exclude": {
-    "**/.git": true,
-    "**/.svn": true,
-    "**/.hg": true,
-    "**/CVS": true,
-    "**/.DS_Store": true,
-    "**/Thumbs.db": true
-  },
-  "hide-files.files": []
+	"editor.formatOnSave": true,
+	"editor.cursorSmoothCaretAnimation": "on",
+	"editor.cursorStyle": "line",
+	"editor.cursorWidth": 2,
+	"editor.fontFamily": "'Fira Code'",
+	"editor.fontLigatures": true,
+	"editor.fontSize": 16,
+	"editor.linkedEditing": true,
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"terminal.integrated.fontFamily": "'Fira Code'",
+	"terminal.integrated.fontSize": 14,
+	"terminal.integrated.cursorBlinking": true,
+	"terminal.integrated.cursorStyleInactive": "none",
+	"terminal.integrated.cursorWidth": 2,
+	"terminal.integrated.customGlyphs": true,
+	"todohighlight.keywords": ["//NOTE", "//NOTES", "// NOTE", "// NOTES"],
+	"prettier.configPath": "./.prettierrc",
+	"workbench.colorCustomizations": {
+		"activityBar.activeBackground": "#835728",
+		"activityBar.background": "#835728",
+		"activityBar.foreground": "#e7e7e7",
+		"activityBar.inactiveForeground": "#e7e7e799",
+		"activityBarBadge.background": "#34ab72",
+		"activityBarBadge.foreground": "#15202b",
+		"commandCenter.border": "#e7e7e799",
+		"sash.hoverBorder": "#835728",
+		"statusBar.background": "#5c3d1c",
+		"statusBar.foreground": "#e7e7e7",
+		"statusBarItem.hoverBackground": "#835728",
+		"statusBarItem.remoteBackground": "#5c3d1c",
+		"statusBarItem.remoteForeground": "#e7e7e7",
+		"titleBar.activeBackground": "#5c3d1c",
+		"titleBar.activeForeground": "#e7e7e7",
+		"titleBar.inactiveBackground": "#5c3d1c99",
+		"titleBar.inactiveForeground": "#e7e7e799"
+	},
+	"peacock.color": "#5c3d1c",
+	"files.exclude": {
+		"**/.git": true,
+		"**/.svn": true,
+		"**/.hg": true,
+		"**/CVS": true,
+		"**/.DS_Store": true,
+		"**/Thumbs.db": true,
+		"**/node_modules": true
+	},
+	"hide-files.files": [],
+	"terminalAllInOne.disableAllKeybindings": false,
+	"terminalAllInOne.terminalTheme": "None",
+	"[html]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[css]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[typescript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[json]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	}
 }

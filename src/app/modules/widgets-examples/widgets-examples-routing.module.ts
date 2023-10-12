@@ -9,42 +9,42 @@ import { TablesComponent } from './tables/tables.component';
 import { WidgetsExamplesComponent } from './widgets-examples.component';
 
 const routes: Routes = [
-  {
-    path: '',
-    component: WidgetsExamplesComponent,
-    children: [
-      {
-        path: 'lists',
-        component: ListsComponent,
-      },
-      {
-        path: 'statistics',
-        component: StatisticsComponent,
-      },
-      {
-        path: 'charts',
-        component: ChartsComponent,
-      },
-      {
-        path: 'mixed',
-        component: MixedComponent,
-      },
-      {
-        path: 'tables',
-        component: TablesComponent,
-      },
-      {
-        path: 'feeds',
-        component: FeedsComponent,
-      },
-      { path: '', redirectTo: 'lists', pathMatch: 'full' },
-      { path: '**', redirectTo: 'lists', pathMatch: 'full' },
-    ],
-  },
+	{
+		path: '',
+		component: WidgetsExamplesComponent,
+		children: [
+			{
+				path: 'lists',
+				component: ListsComponent,
+			},
+			{
+				path: 'statistics',
+				component: StatisticsComponent,
+			},
+			{
+				path: 'charts',
+				component: ChartsComponent,
+			},
+			{
+				path: 'mixed',
+				component: MixedComponent,
+			},
+			{
+				path: 'tables',
+				component: TablesComponent,
+			},
+			{
+				path: 'feeds',
+				component: FeedsComponent,
+			},
+			{ path: '', redirectTo: 'lists', pathMatch: 'full' },
+			{ path: '**', redirectTo: 'lists', pathMatch: 'full' },
+		],
+	},
 ];
 
 @NgModule({
-  imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule],
+	imports: [RouterModule.forChild(routes)],
+	exports: [RouterModule],
 })
 export class WidgetsExamplesRoutingModule {}

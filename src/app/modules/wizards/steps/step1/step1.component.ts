@@ -4,37 +4,34 @@ import { Subscription } from 'rxjs';
 import { ICreateAccount } from '../../create-account.helper';
 
 @Component({
-  selector: 'app-step1',
-  templateUrl: './step1.component.html',
+	selector: 'app-step1',
+	templateUrl: './step1.component.html',
 })
 export class Step1Component implements OnInit, OnDestroy {
-  @Input('updateParentModel') updateParentModel!: (
-    part: Partial<ICreateAccount>,
-    isFormValid: boolean
-  ) => void;
-  form!: FormGroup;
-  @Input() defaultValues!: Partial<ICreateAccount>;
-  private unsubscribe: Subscription[] = [];
+	@Input('updateParentModel') updateParentModel!: (part: Partial<ICreateAccount>, isFormValid: boolean) => void;
+	form!: FormGroup;
+	@Input() defaultValues!: Partial<ICreateAccount>;
+	private unsubscribe: Subscription[] = [];
 
-  constructor(private fb: FormBuilder) {}
+	constructor(private fb: FormBuilder) {}
 
-  ngOnInit() {
-    this.initForm();
-    this.updateParentModel({}, true);
-  }
+	ngOnInit() {
+		this.initForm();
+		this.updateParentModel({}, true);
+	}
 
-  initForm() {
-    this.form = this.fb.group({
-      accountType: [this.defaultValues.accountType, [Validators.required]],
-    });
+	initForm() {
+		this.form = this.fb.group({
+			accountType: [this.defaultValues.accountType, [Validators.required]],
+		});
 
-    const formChangesSubscr = this.form.valueChanges.subscribe((val) => {
-      this.updateParentModel(val, true);
-    });
-    this.unsubscribe.push(formChangesSubscr);
-  }
+		const formChangesSubscr = this.form.valueChanges.subscribe((val) => {
+			this.updateParentModel(val, true);
+		});
+		this.unsubscribe.push(formChangesSubscr);
+	}
 
-  ngOnDestroy() {
-    this.unsubscribe.forEach((sb) => sb.unsubscribe());
-  }
+	ngOnDestroy() {
+		this.unsubscribe.forEach((sb) => sb.unsubscribe());
+	}
 }

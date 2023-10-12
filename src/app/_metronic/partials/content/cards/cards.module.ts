@@ -11,27 +11,8 @@ import { UserListComponent } from './user-list/user-list.component';
 import { DropdownMenusModule } from '../dropdown-menus/dropdown-menus.module';
 
 @NgModule({
-  declarations: [
-    Card1Component,
-    Card2Component,
-    Card3Component,
-    Card4Component,
-    Card5Component,
-    UserListComponent,
-  ],
-  imports: [
-    CommonModule,
-    InlineSVGModule,
-    NgbTooltipModule,
-    DropdownMenusModule,
-  ],
-  exports: [
-    Card1Component,
-    Card2Component,
-    Card3Component,
-    Card4Component,
-    Card5Component,
-    UserListComponent,
-  ],
+	declarations: [Card1Component, Card2Component, Card3Component, Card4Component, Card5Component, UserListComponent],
+	imports: [CommonModule, InlineSVGModule, NgbTooltipModule, DropdownMenusModule],
+	exports: [Card1Component, Card2Component, Card3Component, Card4Component, Card5Component, UserListComponent],
 })
 export class CardsModule {}

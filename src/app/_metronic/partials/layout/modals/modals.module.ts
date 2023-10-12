@@ -7,16 +7,8 @@ import { MainModalComponent } from './main-modal/main-modal.component';
 import { UpgradePlanModalComponent } from './upgrade-plan-modal/upgrade-plan-modal.component';
 
 @NgModule({
-  declarations: [
-    InviteUsersModalComponent,
-    MainModalComponent,
-    UpgradePlanModalComponent,
-  ],
-  imports: [CommonModule, InlineSVGModule, RouterModule],
-  exports: [
-    InviteUsersModalComponent,
-    MainModalComponent,
-    UpgradePlanModalComponent,
-  ],
+	declarations: [InviteUsersModalComponent, MainModalComponent, UpgradePlanModalComponent],
+	imports: [CommonModule, InlineSVGModule, RouterModule],
+	exports: [InviteUsersModalComponent, MainModalComponent, UpgradePlanModalComponent],
 })
 export class ModalsModule {}

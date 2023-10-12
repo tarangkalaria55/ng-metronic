@@ -11,20 +11,7 @@ import { AuthComponent } from './auth.component';
 import { TranslationModule } from '../i18n/translation.module';
 
 @NgModule({
-  declarations: [
-    LoginComponent,
-    RegistrationComponent,
-    ForgotPasswordComponent,
-    LogoutComponent,
-    AuthComponent,
-  ],
-  imports: [
-    CommonModule,
-    TranslationModule,
-    AuthRoutingModule,
-    FormsModule,
-    ReactiveFormsModule,
-    HttpClientModule,
-  ],
+	declarations: [LoginComponent, RegistrationComponent, ForgotPasswordComponent, LogoutComponent, AuthComponent],
+	imports: [CommonModule, TranslationModule, AuthRoutingModule, FormsModule, ReactiveFormsModule, HttpClientModule],
 })
 export class AuthModule {}

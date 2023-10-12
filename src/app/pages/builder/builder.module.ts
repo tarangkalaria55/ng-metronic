@@ -7,18 +7,18 @@ import { NgbTooltipModule } from '@ng-bootstrap/ng-bootstrap';
 import { InlineSVGModule } from 'ng-inline-svg-2';
 
 @NgModule({
-  declarations: [BuilderComponent],
-  imports: [
-    CommonModule,
-    FormsModule,
-    InlineSVGModule,
-    NgbTooltipModule,
-    RouterModule.forChild([
-      {
-        path: '',
-        component: BuilderComponent,
-      },
-    ]),
-  ],
+	declarations: [BuilderComponent],
+	imports: [
+		CommonModule,
+		FormsModule,
+		InlineSVGModule,
+		NgbTooltipModule,
+		RouterModule.forChild([
+			{
+				path: '',
+				component: BuilderComponent,
+			},
+		]),
+	],
 })
 export class BuilderModule {}

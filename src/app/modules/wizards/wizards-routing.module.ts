@@ -5,26 +5,26 @@ import { VerticalComponent } from './vertical/vertical.component';
 import { WizardsComponent } from './wizards.component';
 
 const routes: Routes = [
-  {
-    path: '',
-    component: WizardsComponent,
-    children: [
-      {
-        path: 'horizontal',
-        component: HorizontalComponent,
-      },
-      {
-        path: 'vertical',
-        component: VerticalComponent,
-      },
-      { path: '', redirectTo: 'horizontal', pathMatch: 'full' },
-      { path: '**', redirectTo: 'horizontal', pathMatch: 'full' },
-    ],
-  },
+	{
+		path: '',
+		component: WizardsComponent,
+		children: [
+			{
+				path: 'horizontal',
+				component: HorizontalComponent,
+			},
+			{
+				path: 'vertical',
+				component: VerticalComponent,
+			},
+			{ path: '', redirectTo: 'horizontal', pathMatch: 'full' },
+			{ path: '**', redirectTo: 'horizontal', pathMatch: 'full' },
+		],
+	},
 ];
 
 @NgModule({
-  imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule],
+	imports: [RouterModule.forChild(routes)],
+	exports: [RouterModule],
 })
 export class WizardsRoutingModule {}

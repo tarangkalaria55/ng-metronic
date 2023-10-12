@@ -1,6 +1,6 @@
 export class AddressModel {
-  addressLine?: string;
-  city?: string;
-  state?: string;
-  postCode?: string;
+	addressLine?: string;
+	city?: string;
+	state?: string;
+	postCode?: string;
 }

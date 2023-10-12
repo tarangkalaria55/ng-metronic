@@ -2,11 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { InlineSVGModule } from 'ng-inline-svg-2';
 import { RouterModule, Routes } from '@angular/router';
-import {
-  NgbDropdownModule,
-  NgbProgressbarModule,
-  NgbTooltipModule,
-} from '@ng-bootstrap/ng-bootstrap';
+import { NgbDropdownModule, NgbProgressbarModule, NgbTooltipModule } from '@ng-bootstrap/ng-bootstrap';
 import { TranslateModule } from '@ngx-translate/core';
 import { TranslationModule } from '../../modules/i18n';
 import { LayoutComponent } from './layout.component';
@@ -22,47 +18,47 @@ import { AsideMenuComponent } from './components/aside/aside-menu/aside-menu.com
 import { TopbarComponent } from './components/topbar/topbar.component';
 import { PageTitleComponent } from './components/header/page-title/page-title.component';
 import { HeaderMenuComponent } from './components/header/header-menu/header-menu.component';
-import { DrawersModule, DropdownMenusModule, ModalsModule, EngagesModule} from '../partials';
-import {EngagesComponent} from "../partials/layout/engages/engages.component";
+import { DrawersModule, DropdownMenusModule, ModalsModule, EngagesModule } from '../partials';
+import { EngagesComponent } from '../partials/layout/engages/engages.component';
 
 const routes: Routes = [
-  {
-    path: '',
-    component: LayoutComponent,
-    children: Routing,
-  },
+	{
+		path: '',
+		component: LayoutComponent,
+		children: Routing,
+	},
 ];
 
 @NgModule({
-  declarations: [
-    LayoutComponent,
-    AsideComponent,
-    HeaderComponent,
-    ContentComponent,
-    FooterComponent,
-    ScriptsInitComponent,
-    ToolbarComponent,
-    AsideMenuComponent,
-    TopbarComponent,
-    PageTitleComponent,
-    HeaderMenuComponent,
-    EngagesComponent,
-  ],
-  imports: [
-    CommonModule,
-    RouterModule.forChild(routes),
-    TranslationModule,
-    InlineSVGModule,
-    NgbDropdownModule,
-    NgbProgressbarModule,
-    ExtrasModule,
-    ModalsModule,
-    DrawersModule,
-    EngagesModule,
-    DropdownMenusModule,
-    NgbTooltipModule,
-    TranslateModule,
-  ],
-  exports: [RouterModule],
+	declarations: [
+		LayoutComponent,
+		AsideComponent,
+		HeaderComponent,
+		ContentComponent,
+		FooterComponent,
+		ScriptsInitComponent,
+		ToolbarComponent,
+		AsideMenuComponent,
+		TopbarComponent,
+		PageTitleComponent,
+		HeaderMenuComponent,
+		EngagesComponent,
+	],
+	imports: [
+		CommonModule,
+		RouterModule.forChild(routes),
+		TranslationModule,
+		InlineSVGModule,
+		NgbDropdownModule,
+		NgbProgressbarModule,
+		ExtrasModule,
+		ModalsModule,
+		DrawersModule,
+		EngagesModule,
+		DropdownMenusModule,
+		NgbTooltipModule,
+		TranslateModule,
+	],
+	exports: [RouterModule],
 })
 export class LayoutModule {}

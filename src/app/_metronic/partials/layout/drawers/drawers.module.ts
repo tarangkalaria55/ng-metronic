@@ -7,14 +7,8 @@ import { MessengerDrawerComponent } from './messenger-drawer/messenger-drawer.co
 import { ChatInnerModule } from '../../content/chat-inner/chat-inner.module';
 
 @NgModule({
-  declarations: [
-    ActivityDrawerComponent,
-    MessengerDrawerComponent,
-  ],
-  imports: [CommonModule, InlineSVGModule, RouterModule, ChatInnerModule],
-  exports: [
-    ActivityDrawerComponent,
-    MessengerDrawerComponent,
-  ],
+	declarations: [ActivityDrawerComponent, MessengerDrawerComponent],
+	imports: [CommonModule, InlineSVGModule, RouterModule, ChatInnerModule],
+	exports: [ActivityDrawerComponent, MessengerDrawerComponent],
 })
 export class DrawersModule {}

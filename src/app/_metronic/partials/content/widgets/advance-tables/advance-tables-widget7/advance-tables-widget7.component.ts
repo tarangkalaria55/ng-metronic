@@ -1,16 +1,16 @@
 import { Component, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-advance-tables-widget7',
-  templateUrl: './advance-tables-widget7.component.html',
+	selector: 'app-advance-tables-widget7',
+	templateUrl: './advance-tables-widget7.component.html',
 })
 export class AdvanceTablesWidget7Component {
-  @Input() cssClass: string = '';
-  currentTab = 'Day';
+	@Input() cssClass: string = '';
+	currentTab = 'Day';
 
-  constructor() {}
+	constructor() {}
 
-  setCurrentTab(tab: string) {
-    this.currentTab = tab;
-  }
+	setCurrentTab(tab: string) {
+		this.currentTab = tab;
+	}
 }

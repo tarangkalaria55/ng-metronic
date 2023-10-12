@@ -14,22 +14,16 @@ import { Step4Component } from './steps/step4/step4.component';
 import { Step5Component } from './steps/step5/step5.component';
 
 @NgModule({
-  declarations: [
-    HorizontalComponent,
-    VerticalComponent,
-    WizardsComponent,
-    Step1Component,
-    Step2Component,
-    Step3Component,
-    Step4Component,
-    Step5Component,
-  ],
-  imports: [
-    CommonModule,
-    WizardsRoutingModule,
-    ReactiveFormsModule,
-    InlineSVGModule,
-    NgbTooltipModule,
-  ],
+	declarations: [
+		HorizontalComponent,
+		VerticalComponent,
+		WizardsComponent,
+		Step1Component,
+		Step2Component,
+		Step3Component,
+		Step4Component,
+		Step5Component,
+	],
+	imports: [CommonModule, WizardsRoutingModule, ReactiveFormsModule, InlineSVGModule, NgbTooltipModule],
 })
 export class WizardsModule {}
